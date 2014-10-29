@@ -1,0 +1,4 @@
+> compile:packageBin
+$ exists target/scala-2.10/resource_managed/main/sbt-android-buildinfo/res/values/android_buildinfo.xml
+
+> check
