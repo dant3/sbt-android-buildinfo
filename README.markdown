@@ -7,7 +7,7 @@ Unlike ```sbt-buildinfo```, ```sbt-android-buildinfo``` generates xml android va
 
 Usage
 -------
-To use together with [android-sdk-plugin][https://github.com/pfn/android-sdk-plugin] you can put following code in your build project:
+To use together with [android-sdk-plugin](https://github.com/pfn/android-sdk-plugin) you can put following code in your build project:
 
 ```scala
 import sbt._
