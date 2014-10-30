@@ -25,6 +25,22 @@ Add this to your build.sbt if you want to automatically generate build info file
 resourceGenerators in Compile <+= android.buildinfo.Plugin.androidBuildInfo
 ```
 
+To change generated keys you can override keys setting, for example:
+```scala
+import android.buildinfo.Plugin._
+
+// ...
+
+androidBuildInfoKeys <<= name.apply{(n) => Seq(
+    "name" -> n,
+    "year" -> 2014,
+    "debug" -> true,
+    "strings" -> Array("foo", "bar", "baz"),
+    "ints" -> (1 to 10).toArray
+  )
+}
+```
+
 Use with ```android-sdk-plugin```
 -------
 To use together with [android-sdk-plugin](https://github.com/pfn/android-sdk-plugin) you can put following code in your build project:
