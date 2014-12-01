@@ -1,0 +1,4 @@
+[submodule "repo"]
+	path = repo
+	url = git@github.com:dant3/dant3.github.io.git
+	branch = repo
